@@ -1,0 +1,12 @@
+"homepage":{
+    "name": "name",
+    "description": "description",
+    "authors": "author",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {}
+} "https://github.com/Devepiphany1/Umeoke_Ebubechukwu.git",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
