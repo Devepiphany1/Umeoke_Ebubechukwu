@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio | Umeoke Ebubechukwu</title>
+    <meta name="description" content="Professional portfolio of Umeoke Ebubechukwu, Full Stack Developer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="App.css">
+   
+</head>
+
+<body class="bg-gray-50 text-gray-800 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-600 dark:text-blue-400">UE</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Home</a>
+                    <a href="#about"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">About</a>
+                    <a href="#projects"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Projects</a>
+                    <a href="#resume"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Resume</a>
+                    <a href="#contact"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Contact</a>
+                    <button id="theme-toggle"
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:inline"></i>
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button"
+                        class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition">Home</a>
+                <a href="#about"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition">About</a>
+                <a href="#projects"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition">Projects</a>
+                <a href="#resume"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition">Resume</a>
+                <a href="#contact"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition">Contact</a>
+                <div class="px-3 py-2">
+                    <button id="mobile-theme-toggle"
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:inline"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span
+                            class="text-blue-600 dark:text-blue-400">Umeoke Ebubechukwu</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">FullStack/Devops Engineer</h2>
+                    <p class="text-lg mb-8 max-w-lg">I'm a Fullstack and Cloud Engineer with 5 years of experience
+                        building, deploying, and scaling modern web applications. My work bridges the gap between
+                        software development and cloud infrastructure delivering reliable, performant, and secure
+                        solutions from code to cloud.
+
+                        On the development side, I build full-featured web applications using technologies like React,
+                        TypeScript, Node.js, Java,and PostgreSQL. <br> I’m passionate about writing clean, maintainable
+                        code and
+                        building seamless user experiences.
+
+                        On the infrastructure side, I specialize in deploying and managing cloud environments using AWS,
+                        Docker, and Terraform. I design scalable architectures, implement CI/CD pipelines, and ensure
+                        systems are secure and highly available.<br>
+                        Whether it's launching new features or optimizing backend performance and deployment, I bring a
+                        holistic, end-to-end mindset to every project.
+
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#projects"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition">View My
+                            Work</a>
+                        <a href="#contact"
+                            class="border border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800 px-6 py-3 rounded-lg transition">Contact
+                            Me</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 dark:border-blue-400 floating">
+                            <img src="img/DSC_3300.jpg" alt="John Doe" class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="absolute -bottom-5 -right-5 bg-blue-600 dark:bg-blue-400 text-white rounded-full p-4 shadow-lg">
+                            <i class="fas fa-code text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+                    <p class="mb-4">I'm a passionate Full Stack Developer with over 5 years of experience building web
+                        applications. I specialize in both frontend/backend technologies across the whole stack
+                        (React.js, Node.js,
+                        Express, MongoDB) and cloud computing.</p>
+                    <p class="mb-4">My journey in web development started when I built my first website in college.
+                        Since then, I've worked with startups and established companies to create digital products that
+                        are both functional and beautiful.</p>
+                    <p>When I'm not coding, you can find me on either reddit or X, reading tech blogs, or experimenting
+                        with new
+                        frameworks.</p>
+                </div>
+
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">My Skills</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <!-- Frontend Skills -->
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fab fa-react text-blue-500 text-2xl mr-3"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fab fa-js text-yellow-500 text-2xl mr-3"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fab fa-html5 text-orange-500 text-2xl mr-3"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fab fa-css3-alt text-blue-400 text-2xl mr-3"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fab fa-vuejs text-green-500 text-2xl mr-3"></i>
+                            <span>Vue.js</span>
+                        </div>
+
+                        <!-- Backend Skills -->
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fab fa-node-js text-green-600 text-2xl mr-3"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fas fa-database text-blue-600 text-2xl mr-3"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fas fa-server text-purple-600 text-2xl mr-3"></i>
+                            <span>Express</span>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fas fa-database text-blue-800 text-2xl mr-3"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+
+                        <!-- DevOps Skills -->
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fab fa-docker text-blue-400 text-2xl mr-3"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fab fa-git-alt text-orange-600 text-2xl mr-3"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm flex items-center">
+                            <i class="fab fa-aws text-orange-400 text-2xl mr-3"></i>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex rounded-md shadow-sm" role="group">
+                    <button type="button"
+                        class="px-4 py-2 text-sm font-medium rounded-l-lg border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition"
+                        data-filter="all">All</button>
+                    <button type="button"
+                        class="px-4 py-2 text-sm font-medium border-t border-b border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition"
+                        data-filter="frontend">Frontend</button>
+                    <button type="button"
+                        class="px-4 py-2 text-sm font-medium border-t border-b border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition"
+                        data-filter="backend">Backend</button>
+                    <button type="button"
+                        class="px-4 py-2 text-sm font-medium rounded-r-lg border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition"
+                        data-filter="fullstack">Full Stack</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-md"
+                    data-category="fullstack">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        alt="E-commerce Platform" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">E-commerce Platform</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">A full-featured online store with product
+                            listings, cart functionality, and secure checkout.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">React</span>
+                            <span
+                                class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded">Node.js</span>
+                            <span
+                                class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs px-2 py-1 rounded">MongoDB</span>
+                            <span
+                                class="bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs px-2 py-1 rounded">Stripe
+                                API</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Live Demo</a>
+                            <a href="#" class="text-gray-600 dark:text-gray-400 hover:underline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-md"
+                    data-category="frontend">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+                        alt="Task Management App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">A productivity application for organizing tasks
+                            with drag-and-drop functionality and real-time updates.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">React
+                            </span>
+                            <span
+                                class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs px-2 py-1 rounded">Redux</span>
+                            <span
+                                class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded">Firebase</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Live Demo</a>
+                            <a href="#" class="text-gray-600 dark:text-gray-400 hover:underline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-md"
+                    data-category="backend">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        alt="API Development" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">RESTful API Development</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">A robust API for managing user data and
+                            authentication, built with Node.js and Express.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">Node.js</span>
+                            <span
+                                class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-xs px-2 py-1 rounded">Express</span>
+                            <span
+                                class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs px-2 py-1 rounded">JWT</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Live Demo</a>
+                            <a href="#" class="text-gray-600 dark:text-gray-400 hover:underline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-md"
+                    data-category="fullstack">
+                    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        alt="Blog Platform" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Blog Platform</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">A blogging platform where users can create,
+                            edit, and share their posts with a rich text editor.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">React</span>
+                            <span
+                                class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded">Node.js</span>
+                            <span
+                                class="bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs px-2 py-1 rounded">MongoDB</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Live Demo</a>
+                            <a href="#" class="text-gray-600 dark:text-gray-400 hover:underline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">My Resume</h2>
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h3 class="text-2xl font-semibold mb-4">Experience</h3>
+                    <ul class="list-disc list-inside">
+                        <li><strong>Software Engineer Intern</strong> at Codesoft (2019 - 2020)</li>
+                        <li><strong>Software Engineer</strong> at Vertical Market(2021 - 2023)</li>
+                        Built client-facing dashboards using React and Tailwind CSS, improving user experience and
+                        accessibility.<br>
+
+                        Created RESTful APIs and integrated them into frontend apps using Express and MongoDB.<br>
+
+                        Assisted in deploying applications on AWS using EC2, S3, and Route 53.<br>
+
+                        Wrote scripts for automating development workflows and server provisioning.<br>
+
+
+                        <li><strong>DevOps Engineer</strong> Intafact (2023 - 2024)</li>
+                        <section>
+                            Designed and deployed containerized microservices using Docker and AWS ECS, improving
+                            scalability and deployment speed.<br>
+
+                            Built and maintained CI/CD pipelines with GitHub Actions, reducing deployment errors by
+                            40%.<br>
+
+                            Developed and maintained fullstack web applications using React, Node.js, and
+                            PostgreSQL.<br>
+
+                            Automated infrastructure provisioning with Terraform, enabling rapid and repeatable
+                            environment setups.<br>
+
+                            Integrated monitoring and alerting via CloudWatch and Prometheus/Grafana stack.<br>
+                        </section>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Education</h3>
+                    <ul class="list-disc list-inside">
+                        <li><strong>Bachelor of Science in Computer Science</strong> - ALX- Holberton (2022 - 2024)</li>
+
+ <li><strong>Software Engineer (Frontend)</strong> - ALX- Holberton (2022 - 2024)</li>
+
+ <li><strong>Fullstack Engineer </strong> - ALX- Holberton (2022 - 2024)</li>
+
+ <li><strong>Devops Engineer</strong> - NextWork (2024 - 2025)</li>
+</ul>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="resume.pdf"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition">Download My
+                    Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
+            <form id="contact-form" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 dark:text-gray-300">Name</label>
+                    <input type="text" id="name" required
+                        class="border border-gray-300 dark:border-gray-600 rounded-lg w-full p-2"
+                        placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 dark:text-gray-300">Email</label>
+                    <input type="email" id="email" required
+                        class="border border-gray-300 dark:border-gray-600 rounded-lg w-full p-2"
+                        placeholder="Your Email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 dark:text-gray-300">Message</label>
+                    <textarea id="message" required
+                        class="border border-gray-300 dark:border-gray-600 rounded-lg w-full p-2" rows="4"
+                        placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition">Send
+                    Message</button>
+            </form>
+            <div class="social-media mt-10 text-center">
+                <h3 class="text-xl font-semibold mb-4">Connect with me</h3>
+                <div class="flex justify-center space-x-6 text-gray-700 dark:text-gray-300 text-2xl">
+                    <a href="https://twitter.com/dev_Epiphany" target="_blank" aria-label="Twitter" class="hover:text-blue-500 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourhandle" target="_blank" aria-label="LinkedIn" class="hover:text-blue-700 transition">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/devepiphany1" target="_blank" aria-label="GitHub" class="hover:text-gray-900 dark:hover:text-white transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://tiktok.com/obaofcruise" target="_blank" aria-label="Facebook" class="hover:text-blue-600 transition">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+ <script src="App.js"></script>   
+</html>
